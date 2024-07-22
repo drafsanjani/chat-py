@@ -8,7 +8,8 @@
     <input id="message" autocomplete="off" /><button id="send">Send</button>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-        var socket = io();
+        // Ganti URL dengan URL WebSocket server Anda
+        var socket = io('https://your-websocket-server-url'); 
         var form = document.getElementById('message');
         var input = document.getElementById('message');
         var messages = document.getElementById('messages');
